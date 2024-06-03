@@ -1,0 +1,26 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 30px);
+  grid-template-rows: repeat(10, 30px);
+  justify-content: center;
+  align-items: center;
+}
+
+.cell {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #000000;
+  background-color: #034103;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+
+.cell.revealed {
+  background-color: #1e5221;
+}
+
+.cell.mine {
+  background-color: #f00;
+  color: #fff;
+}
